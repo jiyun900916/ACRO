@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url(font.css);
+
+body {
+    font-family:'Open Sans', 'Prata', 'Noto Sans KR', sans-serif;
+}
+.wrap header {
+    height:70px;
+    border-bottom: 1px solid #ccc;
+}
+.top-header {
+    position: relative; 
+    top: 10px;
+    width: 1600px;
+    height : 100px;
+    margin: 0 auto;
+}
+/* gnb */
+.gnb{
+    position: absolute;
+    top:-30px;
+}
+.btnMenu {
+    background: none;
+    position: absolute;
+    top:25px; left: 0px;
+    width: 50px;
+    font-size: 16px;
+}
+.btnMenu span {
+    position: absolute;
+    top: 13px; left: 50px;
+    width: 50px;
+}
+.btnMenu span:hover {
+    position: absolute;
+    top: 13px; left: 50px;
+    color:#aaa;
+}
+
+.innerMenu {
+    position: absolute;
+    top:100px; left:0;
+    width: 420px;
+    padding: 25px;
+    background: #eee;
+    border-radius: 8px;
+    display: none;
+}
+.innerMenu > li {
+    padding: 0 30px;
+    box-sizing: border-box;
+
+}
+.btnMenu:hover.innerMenu > li {
+    display: block;
+}
+.innerMenu > li > a {
+    width: 50px;
+    height: auto;    
+}
+
+.innerMenu > li > a > span {
+    font-size: 18px;
+    margin-left: 10px;
+    color: #666;
+}
+
+.innerMenu > li:hover {
+    display: block;
+}
+.innerMenu > li > a {
+    margin-top: 20px;
+    line-height: 70px;
+    font-size: 23px;
+}
+.innerMenu > li:hover > a {
+    
+    color: #aaa;
+}
+.innerMenu > li > a > span {
+    font-family: 'Playfair','Unna';
+} 
+.innerMenu > li:hover > a > span{
+    color: #aaa;}
+
+
+/* logo */
+.logo a img{
+    position: absolute;
+    left: 50%; top:10px;
+    transform: translateX(-50%);
+    width: 100px;}
+
+/* util */
+.util {
+position: absolute;
+right: 100px; top: 10px;
+}
+.util ul > li {
+    float: left;
+    color: #333;
+} 
+.util ul > li:hover {
+    color: #888;
+}
+.dot {
+    margin: 0 10px;
+    color: #ccc;
+}
+.search {
+    position: absolute;
+    top:10px; right: 0;
+} 
+/* ---------//header---------*/
+#container {
+    width: 1920px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+#container .content_01 {
+    width: 1600px;
+    height: 900px;
+    margin: 0 auto;
+}
+#container .cont_txt01 {
+    margin: 100px 0;
+    text-align: center;
+
+}
+.h2-tit {
+    font-family: 'Playfair','Unna';
+    font-size: 85px;
+    margin-bottom: 50px;
+}
+.cont_txt01 .gry_txt {
+    color: #777;
+    font-size: 25px;
+}
+.cont_txt01 p {
+    font-size: 23px;
+}
+
+.cont_img01 figure > img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+/* //.content_01 */
+
+/* ---------Text공통--------- */
+.h3-tit {
+    font-size: 50px;
+    margin: 200px 0 30px;
+}
+.txt {
+    font-size: 23px;
+    color: #777;
+}
+span { 
+    color: #444;
+    font-weight: 600;
+}
+span:hover { 
+    color: #888;
+}
+/* ---------//Text공통--------- */
+
+#container .content_02 {
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.content_02 .cont_txt02,
+.content_02 .cont_img02 {
+    width: calc(100%/2);
+
+}
+.content_02 .cont_txt02 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    text-align: center;
+
+}
+
+.content_02 .cont_img02 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+/* //.content_02 */
+
+/* .content_03 */
+.content_03 {
+    position: relative;
+    margin-top:-1px ;
+}
+.content_03 .cont_txt03 {
+    text-align: center;
+    width: 1600px;
+    height: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+.cont_img03 {
+    position: absolute;
+    top:500px; left: 175px;
+}
+.cont_img03 > ul > li {    
+    float: left;
+    width: calc(1600px/4 - 20px);
+    margin-left:10px;
+    text-align: center;
+}
+.cont_img03 ul li figure {overflow: hidden; height: 520px}
+.cont_img03 > ul li figure img {
+    transition: all 0.3s;
+    width: 100%;
+}
+.cont_img03 > ul > li > a > p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+.cont_img03 > ul > li:hover figure img {
+    transform: scale(1.1);
+}
+/* //.content_03 */
+
+
+.content_04 {
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+}
+.content_04 .cont_txt04,
+.content_04 .cont_img04 {
+    width: calc(100%/2);
+
+}
+
+.content_04 .cont_img04 {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+.cont_img04 > img {
+    margin: 90px 65px;
+}
+
+.content_04 .cont_txt04 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    text-align: center;
+
+}
+/* //content04 */
+
+/* footer */
+footer {
+    width: 1600px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+}
+.pt_txtArea{
+    position: relative;
+    line-height: 40px;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.info-box{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    
+}
+.personal_info > li {
+    float: left;
+}
+.personal_info > li a { margin: 0 10px;}
+.company_info > li { 
+    float: left;
+    margin: 0 10px;
+
+}
+.info-box li:hover > a { color: #666;}
+
+
+/* brand-swiper */
+.bradnSwiper {
+    position: absolute;
+    width: 70%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.DStorySwiper {
+    position: absolute;
+    width: 70%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
